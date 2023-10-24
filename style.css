@@ -1,0 +1,133 @@
+
+.navbar-toggler {
+    background-color: transparent; /* Latar belakang transparan */
+    border: none; /* Hapus border */
+    padding: 0; /* Hapus padding */
+    font-size: 1.5rem; /* Ubah ukuran ikon */
+}
+
+.navbar .nav-item{
+    margin: 30px;
+}
+
+.navbar-brand img{
+    max-width: 50px;
+}
+
+.jumbotron{
+    display: grid; 
+    gap: 20px; 
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #FFFCCC;
+    color: #050038;
+}
+
+.jumbotron .jumbotron-content {
+    font-family: 'OpenSans','Arial','Helvetica', 'sans-serif';
+    margin: 10px 40px 30px 50px;
+}
+
+.jumbotron .jumbotron-content h1{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.jumbotron .jumbotron-content p{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.imgSidebar{
+    background-image: url("asset/bg.png");
+    background-size: cover; /* Mengisi elemen sepenuhnya tanpa merubah aspek rasio */
+    background-position: center; /* Posisi gambar di tengah elemen */
+    background-repeat: no-repeat; /* Gambar tidak diulang */
+    min-width: 50%;;
+    height: 500px;
+}
+
+.content p{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sometype Mono', monospace;
+}
+
+.content .container .col{
+    margin: 90px;
+}
+
+.content .container img, h4, p{
+    margin-top: 20px;
+}
+
+.profil{
+    background-color: #FFFCCC;
+}
+
+.profil .img-profil{
+    background-image: url("asset/profil.jpeg");
+    background-size: cover; /* Mengisi elemen sepenuhnya tanpa merubah aspek rasio */
+    background-position: center; /* Posisi gambar di tengah elemen */
+    background-repeat: no-repeat; /* Gambar tidak diulang */
+    min-width: 50%;
+    min-height: 50%;
+}
+
+.profil .container .col-sm{
+    padding: 70px;
+}
+
+.profil .container .col-sm, h3, p, button{
+    margin-bottom: 30px;
+}
+
+.footer-social{
+    padding-top: 100px;
+}
+.footer-content{
+    color: white;
+    padding-bottom: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sometype Mono', monospace;
+}
+
+@media(max-width: 767px){
+
+    .navbar-collapse{
+        width: 100%;
+        background-color: #fff; /* Warna latar belakang dengan tingkat transparansi (0.8 = 80%) */
+    }
+
+    .jumbotron{
+        grid-template-columns: 1fr; /* Hanya satu kolom pada tampilan mobile */
+    }
+    .imgSidebar{
+        background-image: url("asset/bg.png");
+        order: 1;
+    }
+    .jumbotron .jumbotron-content {
+        order: 2;
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .content .container .row .col{
+        margin: 30px;
+    }
+    .profil .container .col-sm{
+        padding: 20px;
+    }
+    
+    .profil .container .col-sm, h3, p, button{
+        margin-bottom: 10px;
+    }
+
+    .profil .img-profil{
+        min-height: 150px;
+    }
+}
